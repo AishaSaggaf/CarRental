@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  make: MyString
+  model: MyString
+  km_travelled: 1
+  latitiude: 1.5
+  longitude: 1.5
+  available_from: 2023-06-08 18:01:19
+  available_to: 2023-06-08 18:01:19
+
+two:
+  make: MyString
+  model: MyString
+  km_travelled: 1
+  latitiude: 1.5
+  longitude: 1.5
+  available_from: 2023-06-08 18:01:19
+  available_to: 2023-06-08 18:01:19
