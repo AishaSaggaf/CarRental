@@ -1,8 +1,10 @@
 <h1>Near cars within 50km </h1>
 <ul>
 <% @nearby_cars.each do |car|  %>   
-  <img src="<%= car.images.first.url %>" alt="<%= car.make%>" "<%= car.model %> ">
-  <li> <%= car.make %> <%= car.model %>  </li>
+  <li> <%= car.make %> <%= car.model %>    
+  <img src="<%= car.images.first.url %>" alt="<%= car.make%>" "<%= car.model %> "> 
+  <%= link_to "Details", details_path(@show, id: car.id) %>
+  </li>
 <% end %>
 </ul>  
 
