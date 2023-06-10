@@ -1,4 +1,6 @@
 class CarsController < ApplicationController
+  include ActiveStorage::SetCurrent
+
   def index 
     #define fixed points
     fixed_latitude = 21.507989 # Fixed latitude value
