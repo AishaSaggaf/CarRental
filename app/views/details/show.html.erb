@@ -1,1 +1,11 @@
 <h1>Details</h1>
+<ul>
+<li>Make: <%= @car.make %> </li> 
+<li>Model: <%= @car.model%>   </li>
+<li>KM: <%= @car.km_travelled %>   </li>
+<li>from: <%= @car.available_from.to_date %>   </li>
+<li>to: <%= @car.available_to.to_date  %>   </li>
+<% @car.images.each do |image|  %>   
+    <img src="<%= image.url %>" > 
+<% end %>
+<ul>
